@@ -18,3 +18,13 @@ this.child_url =
         ? process.env.VUE_APP_CHILD_APP
         : `${window.location.protocol}//${window.location.host}${process.env.VUE_APP_CHILD_APP}`;
  ```
+ ## 可使用脚手架创建该项目：如下
+ 1、首先安装脚手架
+ ```
+  npm i jsmicro-app-cli -g --save
+ ```
+ 2、使用脚手架创建项目
+ ```
+ jsmicro-cli create thb-main
+ ```
+ ![image](https://user-images.githubusercontent.com/31209098/196850677-13ab198f-135f-4496-b67d-51dbf1395915.png)
