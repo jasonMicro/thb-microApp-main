@@ -7,8 +7,13 @@ const routesConfig = [
   'root',
   'adminLogin',
   'admin', //adminLogin 转发 目标路由
-  'transportLogin'
-
+  'transportLogin',
+  {
+    //由于演示这里使用子应用静态路由，如果使用动态路由需要在管理平台添加菜单即可
+    path: '/chart',
+    name: '子应用系统',
+    component: () => import('@/pages/micro-page')
+  }
   // {
   //   // 👇 非严格匹配，/my-page/* 都指向 MyPage 页面
   //   path: '/micro/*', // vue-router@4.x path的写法为：'/my-page/:page*'
